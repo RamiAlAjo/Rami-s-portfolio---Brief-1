@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css Stylesheet Link -->
+    <link rel="stylesheet" href="./Assets/css/Rami Portfolio Style.css" />
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <!-- social media icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Rami - Portfolio</title>
+    </head>
+  <body>
+    <!-- navbar (Bootstrap) -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="brandName"><span>Rami</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#home"
+                class="greyHover"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#AboutMe"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#MyProjects"
+                >My Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#ContactMe"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="main">
+        <h1 class="headings">
+          <span class="salutation">Hello,</span><br />
+          I Am <br />
+          Rami AlAjo
+        </h1>
+      </div>
+    </section>
+
+    <main>
+      <!-- About Me (Flex)-->
+      <section id="AboutMe">
+        <h1 class="headings">About Me</h1>
+        <div id="pic">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/002/248/232/original/programmer-computer-expert-chalk-white-icon-on-black-background-vector.jpg"
+            alt="Coding Man Image"
+          />
+          <div id="intro">
+            <h3>Exploring Web Development</h3>
+            <p class="aboutMeText">
+              Aspiring to become a FULL STACK WEB-DEVELOPER specializing in
+              HTML, CSS, and JavaScript. My goal is to create visually appealing
+              and user-friendly websites, and I am committed to mastering both
+              front-end and back-end technologies. Through ongoing learning and
+              practical experience, I aim to become a skilled developer capable
+              of building dynamic and scalable web applications.
+            </p>
+            <br>
+            <h3>Education</h3>
+            <p class="aboutMeText">
+              I studied Mechanical engineering but I have a strong passion for
+              technology. I have taken elective courses in web development and
+              am particularly interested in pursuing a career in this field.
+              Currently, I am undergoing training at the Orange Coding Academy
+              to further enhance my skills and gain practical experience. I am
+              excited about this opportunity and eager to apply what I learn to
+              real-world web development projects in the future.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Projects (Flex) -->
+      <section id="MyProjects">
+        <h1 class="headings">My Projects</h1>
+        <div class="gallery">
+          <img
+            src="./Assets/imgs/Screenshot_20-5-2024_9810_.jpeg"
+            alt="Project #1"
+          />
+          <img
+            src="./Assets/imgs/Screenshot_20-5-2024_991_.jpeg"
+            alt="Project #2"
+          />
+          <img
+            src="./Assets/imgs/Screenshot_20-5-2024_9939_.jpeg"
+            alt="Project #3"
+          />
+        </div>
+      </section>
+
+      <!-- Services (Grid) -->
+      <setion id="Services">
+        <h1 class="headings">Services</h1>
+        <div class="servicesRow">
+          <div class="serviceCard">
+            <img src="assets/svgs/code-solid.svg" alt="html" />
+            <h4>Web Design</h4>
+
+            <p>
+              I provide comprehensive web development services, specializing in
+              creating dynamic, responsive, and user-friendly websites. Using
+              Bootstrap, and Angular.
+            </p>
+          </div>
+
+          <div class="serviceCard">
+            <img src="assets/svgs/server-solid.svg" alt="system" />
+            <h4>Back-End Development</h4>
+            <p>
+              Specialized back-end development services to build robust and
+              scalable server-side applications. Include, Server-Side
+              Programming with .NET. Database Management Integrating SQL Server
+              databases. Create and maintaining RESTful APIs for seamless data
+              exchange.
+            </p>
+          </div>
+
+          <div class="serviceCard">
+            <img src="assets/svgs/chart-simple-solid.svg" alt="system" />
+            <h4>Data Analysis</h4>
+            <p>
+              provide data analysis and statistical services to help you make
+              informed decisions. including Data Analysis Using Python.
+              Conducting comprehensive statistical studies and generating
+              insights. Create visual representations of data.
+            </p>
+          </div>
+        </div>
+      </setion>
+    </main>
+    <!-- Contact Me (Form)-->
+    <section id="ContactMe">
+      <h1 class="headings">Contact Me</h1>
+      <form action class="form">
+        <input
+          type="text"
+          placeholder="Enter Your Name"
+          class="input"
+          name="name"
+        />
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          class="input"
+          name="email"
+        />
+        <textarea
+          name="msg"
+          id="msg"
+          cols="30"
+          rows="5"
+          placeholder="Enter Your Message"
+        ></textarea>
+        <input type="submit" value="SEND" id="send" />
+      </form>
+    </section>
+
+    <!-- The social media icon bar -->
+    <aside>
+      <div class="icon-bar">
+        <div class="facebookDiv">
+          <a
+            href="https://web.facebook.com/?_rdc=1"
+            class="facebook"
+            target="_blank"
+            ><i class="fa fa-facebook"></i
+          ></a>
+        </div>
+        <div class="xDiv">
+          <a href="https://x.com/" class="x" target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+        <div class="linkedinDiv">
+          <a href="https://www.linkedin.com/" class="linkedin" target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </aside>
+    
+    <!-- Optinal JS Bootstrap Link --> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
